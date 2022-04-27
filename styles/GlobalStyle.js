@@ -1,9 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
+import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
 
 export const GlobalStyle = createGlobalStyle`
   html,
   body {
+    height: 100%;
     padding: 0;
     margin: 0;
     letter-spacing: -1px;
