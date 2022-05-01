@@ -1,16 +1,20 @@
+import Head from "next/head";
 import styled from "styled-components";
 
 export default function About() {
   return (
-    <Container>
-      <ImgWrapper>
-        <Img
-          alt="맛있는 햄버거"
-          src="https://images.unsplash.com/photo-1555554317-766200eb80d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
-        />
-      </ImgWrapper>
-      <Info>믿을만한 맛집을 소개합니다.</Info>
-    </Container>
+    <>
+      <Head>
+        <title>ABOUT | AWESOME FOOD STORE</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Container>
+        <ImgWrapper>
+          <Img alt="맛있는 햄버거" src="../cafe.jpg" />
+        </ImgWrapper>
+        <Info>믿을 수 있는 맛집을 소개합니다.</Info>
+      </Container>
+    </>
   );
 }
 
@@ -29,7 +33,7 @@ const Img = styled.img`
   object-fit: cover;
 `;
 
-const Info = styled.div`
+const Info = styled.p`
   width: 100%;
   margin: 100px auto;
   font-size: 28px;
